@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "force_overwrite": false,
+    "packages": 
+        {   
+            "templateflow": 
+            {
+                "home_dir": "local"
+            },         
+            "ants": 
+            {
+                "con_tech": "local",
+                "version": "2.3.1",
+                "container": "local"
+            },
+            "freesurfer": 
+            {
+                "con_tech": "local",
+                "version": "7.4.0",
+                "container": "local"
+            }
+        },
+    "templates": 
+        {
+            "reference": 
+            {
+                "tool": "templateflow",
+                "space": "MNI152NLin2009cAsym"
+            },
+            "spams":
+            { "atlas":"MIAL67ThalamicNuclei",
+              "description":"# Thalamic parcellation (M): Thalamic parcellation.",
+              "citation":"(Najdenovska and Aleman-Gomez et al, 2018)",
+              "deriv_foldname":"mialabased-thalamicparc"}
+        },
+    "outputs":
+        {
+          "transforms": "ants-transf2mni",
+          "freesurfer": "freesurfer",
+          "thalparc": "mialabased-thalamicparc"
+        }
+}

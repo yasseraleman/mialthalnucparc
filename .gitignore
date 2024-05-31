@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
+.vscode/
 build/
 develop-eggs/
 dist/
@@ -24,6 +25,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.~*
+config/.~*
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
